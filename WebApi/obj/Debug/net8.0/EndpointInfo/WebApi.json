@@ -1,0 +1,451 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "WebApi",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Bank": {
+      "get": {
+        "tags": [
+          "Bank"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Bank"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Bank"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Bank"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Bank"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Bank"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Bank"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Bank"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Bank/{id}": {
+      "get": {
+        "tags": [
+          "Bank"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Bank"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Bank"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Bank"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Bank"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Bank"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Bank"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Bank"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Bank"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BankAccount/{id}": {
+      "get": {
+        "tags": [
+          "BankAccount"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/BankAccount"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BankAccount"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BankAccount"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "BankAccount"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BankAccount"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BankAccount"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/BankAccount"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "BankAccount"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BankAccount": {
+      "get": {
+        "tags": [
+          "BankAccount"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "BankAccount"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BankAccount"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BankAccount"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/BankAccount"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/BankAccount"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BankAccount"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BankAccount"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Bank": {
+        "required": [
+          "bankName"
+        ],
+        "type": "object",
+        "properties": {
+          "bankId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "bankName": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "BankAccount": {
+        "required": [
+          "accountHolder",
+          "accountNumber",
+          "bankId",
+          "ifsc"
+        ],
+        "type": "object",
+        "properties": {
+          "bankAccountId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "accountNumber": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "accountHolder": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "bankId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ifsc": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
