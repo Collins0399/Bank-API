@@ -1,10 +1,11 @@
 Bank-API
 
-Bank API
+#Bank API
 
   This is a simple ASP.NET Core Web API application for managing banks and bank accounts. The application is built using .NET 8 and Entity Framework Core.
+  
 
-Features
+#Features
 
 Manage banks (Create, Read, Update, Delete)
 
@@ -14,9 +15,10 @@ Swagger UI for API documentation and testing
 
 CORS support
 
-Getting Started
 
-Prerequisites
+#Getting Started
+
+-Prerequisites
 
 .NET 8 SDK
 
@@ -24,13 +26,16 @@ SQL Server
 
 Installation
 
+
 Clone the repository:
 
 git clone https://github.com/Collins0399/Bank-API.git
 
-Usage
+
+#Usage
 
 The API provides the following endpoints:
+
 
 1. Bank Endpoints
 
@@ -44,6 +49,7 @@ PUT /api/Bank/{id} - Update a bank
 
 DELETE /api/Bank/{id} - Delete a bank
 
+
 2. Bank Account Endpoints
 
 GET /api/BankAccount - Get all bank accounts
@@ -56,15 +62,18 @@ PUT /api/BankAccount/{id} - Update a bank account
 
 DELETE /api/BankAccount/{id} - Delete a bank account
 
-Swagger UI
+
+#Swagger UI
 
 You can access the Swagger UI for testing the API endpoints at:
 
 https://localhost:7187/swagger
 
-API Testing with Postman
+
+#API Testing with Postman
 
 To test the API endpoints using Postman, follow these steps:
+
 
 1. Set Up Postman:
 
@@ -146,7 +155,7 @@ Body (JSON):
 {
   "accountNumber": "123456789",
   "bankId": 1,
-  "balance": 1000.00
+  //other properties
 }
 
 Delete a Bank Account
@@ -161,7 +170,8 @@ Parameters:
 
 id (path parameter): The ID of the bank account to delete.
 
-Project Structure
+
+#Project Structure
 
 Controllers - Contains the API controllers for handling HTTP requests.
 
@@ -169,13 +179,15 @@ Models - Contains the data models and the Entity Framework Core DB context.
 
 Program.cs - The entry point of the application.
 
-Configuration
+
+#Configuration
 
 appsettings.json - Contains the configuration settings for the application.
 
 appsettings.Development.json - Contains the development-specific configuration settings.
 
-Contributing
+
+#Contributing
 
 Contributions are welcome! Here’s how you can contribute:
 
