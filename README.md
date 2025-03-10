@@ -3,7 +3,7 @@ Bank API
 
 This is a simple ASP.NET Core Web API application for managing banks and bank accounts. The application is built using .NET 8 and Entity Framework Core.
 
-Features
+#Features
 
 Manage banks (Create, Read, Update, Delete)
 
@@ -13,9 +13,9 @@ Swagger UI for API documentation and testing
 
 CORS support
 
-Getting Started
+#Getting Started
 
-Prerequisites
+-Prerequisites
 
 .NET 8 SDK
 
@@ -23,16 +23,15 @@ SQL Server
 
 Installation
 
-Clone the repository:
+#Clone the repository:
 
-git clone https://github.com/yourusername/BankAPI.git
-cd BankAPI
+git clone [https://github.com/yourusername/BankAPI.git](https://github.com/Collins0399/Bank-API.git)
 
-Usage
+#Usage
 
-The API provides the following endpoints:
+-The API provides the following endpoints:
 
-Bank Endpoints
+1.Bank Endpoints
 
 GET /api/Bank - Get all banks
 
@@ -44,7 +43,7 @@ PUT /api/Bank/{id} - Update a bank
 
 DELETE /api/Bank/{id} - Delete a bank
 
-Bank Account Endpoints
+2.Bank Account Endpoints
 
 GET /api/BankAccount - Get all bank accounts
 
@@ -56,25 +55,25 @@ PUT /api/BankAccount/{id} - Update a bank account
 
 DELETE /api/BankAccount/{id} - Delete a bank account
 
-Swagger UI
+#Swagger UI
 
 You can access the Swagger UI for testing the API endpoints at https://localhost:7187/swagger.
 
-API Testing with Postman
+#API Testing with Postman
 
 To test the API endpoints using Postman, follow these steps:
 
-Set Up Postman:
+a.Set Up Postman:
 
-Download and install Postman from here.
+b.Download and install Postman from here.
 
-Open Postman and create a new collection for your API tests.
+c.Open Postman and create a new collection for your API tests.
 
-Add Requests to the Collection:
+d.Add Requests to the Collection:
 
 For each endpoint, create a new request in Postman.
 
-Bank Endpoints
+(i).Bank Endpoints
 
 Get All Banks
 
@@ -106,7 +105,7 @@ Description: Creates a new bank.
 
 Body (JSON):
 
-Bank Account Endpoints
+(ii).Bank Account Endpoints
 
 Get All Bank Accounts
 
@@ -150,7 +149,7 @@ Parameters:
 
 id (path parameter): The ID of the bank account to delete.
 
-Project Structure
+#Project Structure
 
 Controllers - Contains the API controllers for handling HTTP requests.
 
@@ -158,14 +157,17 @@ Models - Contains the data models and the Entity Framework Core DB context.
 
 Program.cs - The entry point of the application.
 
-Configuration
+#Configuration
 
 appsettings.json - Contains the configuration settings for the application.
 
 appsettings.Development.json - Contains the development-specific configuration settings.
 
-Contributing
+#Contributing
 
-Contributions are welcome! Please open an issue or submit a pull request.
+Contributions are welcome! Here’s how you can contribute:
 
+Open an Issue: Report bugs, suggest features, or ask questions via GitHub Issues.
+
+Submit a Pull Request: Fork the repository, make improvements, and submit a pull request for review.
 
